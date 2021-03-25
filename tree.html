@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Viewstl Javascript Plugin - Simple Example</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<div id="stl_cont" style="width:1350px;height:800px;margin:0 auto;"></div>
+
+<script src="stl_viewer.min.js"></script>
+
+
+<script>
+
+
+
+var stl_viewer=new StlViewer
+(
+document.getElementById("stl_cont"),
+{
+
+    auto_rotate:true,
+    cameray: 50,
+models:
+[
+{filename:"tree.obj"}
+]
+}
+);
+</script>
+
+
+
+
+
+</body>
+</html>
